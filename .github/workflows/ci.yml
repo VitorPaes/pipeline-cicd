@@ -1,0 +1,25 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Verificar existência do index.html
+        run: |
+          if [ ! -f site/index.html ]; then
+            echo "Arquivo index.html não encontrado!"
+            exit 1
+          fi
+
+      - name: Exibir sucesso
+        run: echo "Validação concluída com sucesso!"
