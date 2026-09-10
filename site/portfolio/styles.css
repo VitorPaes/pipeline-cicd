@@ -117,3 +117,18 @@ h2{font-size:clamp(2rem,3.3vw,2.9rem);letter-spacing:-.045em;font-weight:600;lin
 @media(max-width:380px){.shell{width:calc(100% - 32px)}.skills{grid-template-columns:1fr}nav{gap:2px}html{scroll-padding-top:175px}nav a{font-size:.875rem}.experience-top{flex-wrap:wrap}.footer-inner{gap:12px}.footer a:not(.brand){flex-basis:100%}.hero h1{font-size:4.5rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 @media print{.header,.skip-link,.hero-actions,.hero-bottom,.text-link,.project-link,.contact,.footer{display:none!important}.shell{width:100%;max-width:none}.hero{background:white!important;color:#111827!important;padding:0 0 24px}.hero-grid{display:block;padding:0}.hero h1{font-size:36pt;line-height:1.1}.hero h1 br{display:none}.hero-role{font-size:15pt}.hero-intro,.hero-current p span,.hero .eyebrow,.location{color:#515c6c!important}.hero-detail{padding-top:16px}.hero-current{margin-top:12px}.section{padding:24px 0;background:white}.about,.experience-layout,.education-layout{display:block}.section-heading{position:static!important;margin-bottom:20px}.skills{margin-top:20px}.experience-item,.project,.education{break-inside:avoid}.project{display:block}.featured-project{margin:0;padding:20px 0;background:white;border:0;border-bottom:1px solid #ddd}.project-meta{margin-bottom:10px}.project-body h3{font-size:17pt}.eyebrow{margin-bottom:8px}h2{font-size:23pt}.timeline{margin-left:8px}@page{margin:18mm}}
+
+/* Retrato na apresentação */
+.profile-photo {
+  display: block;
+  width: 136px;
+  height: 136px;
+  margin-bottom: 24px;
+  border: 3px solid var(--bright);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 760px) {
+  .profile-photo { width: 112px; height: 112px; margin-bottom: 20px; }
+}
